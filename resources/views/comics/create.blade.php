@@ -51,7 +51,7 @@
         </div>
 
         <button class="p-2" type="reset">resetta i campi</button>
-        <button class="p-2" type="submit">inserisci il nuovo ospite</button>
+        <button class="p-2" type="submit">inserisci il nuovo fumetto</button>
 
     </form>
 @endsection
