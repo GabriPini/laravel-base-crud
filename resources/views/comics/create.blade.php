@@ -10,48 +10,48 @@
 
 
 
-    <form action="{{ route('comics.store')}}" method="POST">
+    <form  class="mt-5 text-center " action="{{ route('comics.store')}}" method="POST">
         @csrf
 
-        <div>
+        <div class="p-2">
 
-            <input type="text" id="title" name="title" placeholder="inserisci il titolo" required>
-
-        </div>
-
-        <div>
-
-            <input type="text" id="description" name="description" placeholder="inserisci la descrizione"  required>
-
-        </div>
-        <div>
-
-            <input type="text" id="thumb" name="thumb" placeholder="inserisci l'url del thumb della copertina"  required>
-
-        </div>
-        <div>
-
-            <input type="text" id="price" name="price" placeholder="inserisci il prezzo"  required>
-
-        </div>
-        <div>
-
-            <input type="text" id="series" name="series" placeholder="inserisci la serie"  required>
-
-        </div>
-        <div>
-
-            <input type="text" id="sale_date" name="sale_date" placeholder="inserisci la data di uscita" required>
-
-        </div>
-        <div>
-
-            <input type="text" id="type" name="type" placeholder="inserisci il tipo"  required>
+            <input class="p-2" type="text" id="title" name="title" placeholder="inserisci il titolo" required>
 
         </div>
 
-        <button type="reset">resetta i campi</button>
-        <button type="submit">inserisci il nuovo ospite</button>
+        <div class="p-2">
+
+            <input class="p-2" type="text" id="description" name="description" placeholder="inserisci la descrizione"  required>
+
+        </div>
+        <div class="p-2">
+
+            <input class="p-2" type="text" id="thumb" name="thumb" placeholder="inserisci l'url del thumb della copertina"  required>
+
+        </div>
+        <div class="p-2">
+
+            <input  class="p-2" type="text" id="price" name="price" placeholder="inserisci il prezzo"  required>
+
+        </div>
+        <div class="p-2" >
+
+            <input class="p-2" type="text" id="series" name="series" placeholder="inserisci la serie"  required>
+
+        </div>
+        <div class="p-2">
+
+            <input class="p-2" type="text" id="sale_date" name="sale_date" placeholder="inserisci la data di uscita" required>
+
+        </div>
+        <div class="p-2">
+
+            <input class="p-2" type="text" id="type" name="type" placeholder="inserisci il tipo"  required>
+
+        </div>
+
+        <button class="p-2" type="reset">resetta i campi</button>
+        <button class="p-2" type="submit">inserisci il nuovo ospite</button>
 
     </form>
 @endsection
