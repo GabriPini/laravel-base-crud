@@ -44,7 +44,19 @@ class ComicController extends Controller
     {
         //
 
-        $data = $request->all();
+       $validated_data = $request->validate([
+            'title' => 'required|max:60',
+            'thumb' => 'required',
+            'description' => 'required',
+            'price' => 'required|max:6',
+            'series' => 'required|max:60',
+            'sale_date' => 'required|max:10',
+            'type' => 'required|max:30',
+
+        ]);
+
+
+      /*   $data = $request->all(); */
 
         $comic = new Comic();
 
@@ -62,7 +74,7 @@ class ComicController extends Controller
         // $comic->fill($data);
 
         // Metodo Create (inserire sempre i fillable)
-        $comic = Comic::create($data);
+        $comic = Comic::create($validated_data);
         $comic->save();
 
         return redirect()->route('comics.show', $comic);

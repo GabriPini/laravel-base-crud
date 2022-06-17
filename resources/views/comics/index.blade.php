@@ -9,6 +9,9 @@
 
 
     <div class="container mt-3">
+        <div class="heading p-4 text-center">
+            <h1>All Comics</h1>
+        </div>
         <div class="row">
 
 
