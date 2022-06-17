@@ -7,7 +7,7 @@
     <a class="btn btn-primary btn-lg " href="{{ route('comics.index')}}">Back to comics</a>
 </div>
 
-    <div class="mt-4">
+    <div class="mt-4 container">
         <img src="{{$comic->thumb}}" width="200" alt="">
         <h3>{{$comic->title}}</h3>
         <h5>{{$comic->series}}</h5>

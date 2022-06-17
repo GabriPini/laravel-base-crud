@@ -51,9 +51,12 @@ class ComicController extends Controller
         //Metodo manuale
         // $comic->title = $data['title'];
         // $comic->description = $data['description'];
-        // $comic->author = $data['author'];
-        // $comic->year = $data['year'];
-        // $comic->url = $data['url'];
+        // $comic->thumb = $data['thumb'];
+        // $comic->price = $data['price'];
+        // $comic->series = $data['series'];
+        // $comic->sale_date = $data['sale_date'];
+        // $comic->type = $data['type'];
+
 
         // Metodo Fill (inserire sempre i fillable)
         // $comic->fill($data);
