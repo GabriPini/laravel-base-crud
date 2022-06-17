@@ -16,12 +16,14 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>id</th>
-                        <th>thumb</th>
-                        <th>title</th>
-                        <th>series</th>
-                        <th>price</th>
-                        <th>options</th>
+                        <th>ID</th>
+                        <th>Thumb</th>
+                        <th>Title</th>
+                        <th>Series</th>
+                        <th>Price</th>
+                        <th>Sale Date</th>
+                        <th>Type</th>
+                        <th>Options</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,6 +35,8 @@
                             <td>{{ $comic->title }}</td>
                             <td>{{ $comic->series}}</td>
                             <td>{{ $comic->price }}&euro;</td>
+                            <td>{{ $comic->sale_date}}</td>
+                            <td>{{ $comic->type}}</td>
                             <td>
                                 <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">View</a><br>
                                 <a href="{{ route('comics.edit', ['comic' => $comic]) }}">Edit </a><br>
