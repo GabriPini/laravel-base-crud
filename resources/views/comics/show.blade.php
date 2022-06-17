@@ -12,7 +12,7 @@
         <h3>{{$comic->title}}</h3>
         <h5>{{$comic->series}}</h5>
         <h5>{{$comic->type}}</h5>
-        <h5>${{$comic->price}}</h5>
+        <h5>&euro;{{$comic->price}}</h5>
         <h5>{{$comic->sale_date}}</h5>
         <p>{{$comic->description}}</p>
     </div>

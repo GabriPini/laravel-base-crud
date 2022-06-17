@@ -16,7 +16,7 @@
             @csrf
             <div class="form-group">
                 <div class="p-2">
-                    <input class="py-2 px-3 w-100 @error('title') is-invalid @enderror" type="text" id="title"
+                    <input class="py-2 px-3 w-100 form-control @error('title') is-invalid @enderror" type="text" id="title"
                         name="title" placeholder="inserisci il titolo" value="{{ old('title') }}" required>
                     @error('title')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -28,7 +28,7 @@
 
                 <div class="p-2">
 
-                    <input class="py-2 px-3 w-100 @error('thumb') is-invalid @enderror" type="text" id="thumb"
+                    <input class="py-2 px-3 w-100 form-control @error('thumb') is-invalid @enderror" type="text" id="thumb"
                         name="thumb" placeholder="inserisci l'url del thumb della copertina" value="{{ old('thumb') }}"
                         required>
                     @error('thumb')
@@ -40,7 +40,7 @@
             <div class="form-group">
                 <div class="p-2">
 
-                    <input class="py-2 px-3 w-100 @error('price') is-invalid @enderror" type="text" id="price"
+                    <input class="py-2 px-3 w-100 form-control @error('price') is-invalid @enderror" type="text" id="price"
                         name="price" placeholder="inserisci il prezzo" value="{{ old('price') }}" required>
                     @error('price')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -51,7 +51,7 @@
             <div class="form-group">
                 <div class="p-2">
 
-                    <input class="py-2 px-3 w-100 @error('series') is-invalid @enderror" type="text" id="series"
+                    <input class="py-2 px-3 w-100 form-control @error('series') is-invalid @enderror" type="text" id="series"
                         name="series" placeholder="inserisci la serie" value="{{ old('series') }}" required>
                     @error('series')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -62,7 +62,7 @@
             <div class="form-group">
                 <div class="p-2">
 
-                    <input class="py-2 px-3 w-100 @error('sale_date') is-invalid @enderror" type="text" id="sale_date"
+                    <input class="py-2 px-3 w-100 form-control @error('sale_date') is-invalid @enderror" type="text" id="sale_date"
                         name="sale_date" placeholder="inserisci la data di uscita" value="{{ old('sale_date') }}" required>
                     @error('sale_date')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -73,7 +73,7 @@
             <div class="form-group">
                 <div class="p-2">
 
-                    <input class="py-2 px-3 w-100 @error('type') is-invalid @enderror" type="text" id="type"
+                    <input class="py-2 px-3 w-100 form-control @error('type') is-invalid @enderror" type="text" id="type"
                         name="type" placeholder="inserisci il tipo" value="{{ old('type') }}" required>
                     @error('type')
                         <div class="alert alert-danger">{{ $message }}</div>
@@ -84,7 +84,7 @@
             <div class="form-group">
                 <div class="p-2">
 
-                    <textarea class=" py-4 px-3 w-100 @error('description') is-invalid @enderror" type="text" id="description"
+                    <textarea class=" py-4 px-3 w-100 form-control @error('description') is-invalid @enderror" type="text" id="description"
                         name="description" placeholder="inserisci la descrizione" required>
                         {{ old('description') }}</textarea>
                     @error('description')
